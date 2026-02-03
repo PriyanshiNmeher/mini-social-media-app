@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an instance of axios
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api', // Server URL
+    baseURL: 'https://mini-social-media-app-backend.onrender.com/api', // Server URL
     headers: {
         'Content-Type': 'application/json'
     }
