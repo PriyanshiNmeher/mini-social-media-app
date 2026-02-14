@@ -13,12 +13,6 @@ export const AuthProvider = ({ children }) => {
         const checkUser = async () => {
             const token = localStorage.getItem('token');
             if (token) {
-                // Ideally we should have a /me endpoint to validate token and get user data
-                // For now, we decode or just trust it until 401. 
-                // Let's decode if we stored user info, but simpler to rely on components handling 401.
-                // Requirement: "Store user details...".
-                // Let's assume user is persisted in localStorage for now or we fetch it?
-                // The login response returns { token, user }. We can store user in localStorage too.
                 const storedUser = localStorage.getItem('user');
                 if (storedUser) {
                     setUser(JSON.parse(storedUser));
