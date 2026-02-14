@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// Create an instance of axios
 const api = axios.create({
-    baseURL: 'https://mini-social-media-app-backend.onrender.com/api', // Server URL
+    baseURL: 'https://mini-social-media-app-backend.onrender.com/api', 
     headers: {
         'Content-Type': 'application/json'
     }
