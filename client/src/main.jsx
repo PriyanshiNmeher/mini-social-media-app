@@ -5,11 +5,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext.jsx';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
-// Create a theme instance
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // Customize as needed
+      main: '#1976d2', 
     },
     background: {
       default: '#f2f4f8',
